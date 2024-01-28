@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
 
+:root {
+    --height-of-header: clamp(100px, 40vw, 60vh);
+}
+
+
 body {
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -133,6 +138,7 @@ body {
     height: 340px;
     width: 230px;
     cursor:pointer;
+    margin-top: 10px;
 }
 
 #modal {
@@ -287,7 +293,7 @@ body {
 }
 
 a {
-    color: white;
+    color: rgb(216, 216, 216);
 }
 
 .gallery-image {
