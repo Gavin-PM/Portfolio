@@ -149,6 +149,7 @@ body {
     height: 400px;
     opacity: 0;
     position: relative;
+    overflow-x: hidden;
 }
 
 #todo_a {
