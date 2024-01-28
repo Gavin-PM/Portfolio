@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premove - Home</title>
+    <link rel="stylesheet" href="mainstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="jquery.fittext.js"></script>
+    <link rel="icon" type="image/x-icon" href="Media/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5e7a43">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffe8e8">
+</head>
+<body>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+    <div id="content">
+        <div class="header">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100" height="100" viewBox="0 0 1000 1000" xml:space="preserve">
+                    <g transform="matrix(2 0 0 2 500 500)" id="466798">
+                        <g vector-effect="non-scaling-stroke">
+                        <g transform="matrix(2.0833 0 0 2.0833 -3.8864 -55.2455)" id="Z3-m2PJjxgS0GRnB3gH10">
+                            
+                        </g>
+                        <g transform="matrix(0 2.075 -2.075 0 125.5378 -124.4622)" id="s-s0gBKwvdk7dT72okKPx">
+                            <path class="svg-light" style="fill-rule: nonzero; opacity: 1;" d="M -60.24096 -29.74649 C -60.24096 -46.58813000000001 -46.58812 -60.240970000000004 -29.746480000000002 -60.240970000000004 L 60.24096999999999 -60.240970000000004 L 60.24096999999999 60.24096 L -60.240960000000015 60.24096 z" stroke-linecap="round"/>
+                        </g>
+                        <g transform="matrix(2.075 0 0 2.075 -124.4622 -124.4622)" id="X9KgL__6X24hFIdyc1hFT">
+                            <path class="svg-dark" style="fill-rule: nonzero; opacity: 1;" d="M -60.24096 -29.74649 C -60.24096 -46.58813000000001 -46.58812 -60.240970000000004 -29.746480000000002 -60.240970000000004 L 60.24096999999999 -60.240970000000004 L 60.24096999999999 60.24096 L -60.240960000000015 60.24096 z" stroke-linecap="round"/>
+                        </g>
+                        <g transform="matrix(-2.075 0 0 -2.075 125.5378 125.5378)" id="y5SzoYSJITaoLXrG9C_21">
+                            <path class="svg-dark" style="fill-rule: nonzero; opacity: 1;" d="M -60.24096 -29.74649 C -60.24096 -46.58813000000001 -46.58812 -60.240970000000004 -29.746480000000002 -60.240970000000004 L 60.24096999999999 -60.240970000000004 L 60.24096999999999 60.24096 L -60.240960000000015 60.24096 z" stroke-linecap="round"/>
+                        </g>
+                        <g transform="matrix(0 -2.075 2.075 0 -124.4622 125.5378)" id="Dt84WPgdNh79NkCuaU6K-">
+                            <path class="svg-light" style="fill-rule: nonzero; opacity: 1;" d="M -60.24096 -29.74649 C -60.24096 -46.58813000000001 -46.58812 -60.240970000000004 -29.746480000000002 -60.240970000000004 L 60.24096999999999 -60.240970000000004 L 60.24096999999999 60.24096 L -60.240960000000015 60.24096 z" stroke-linecap="round"/>
+                        </g>
+                        <g transform="matrix(6.285 0 0 6.285 124.8986 123.4536)" id="jDIyKjTRatq_a03Yfjtx-">
+                            <path class="svg-light" style="fill-rule: nonzero; opacity: 1;" transform=" translate(-22.5, -24.25)" d="M 22.5 9 C 20.29 9 18.5 10.79 18.5 13 C 18.5 13.89 18.79 14.71 19.28 15.379999999999999 C 17.33 16.5 16 18.59 16 21 C 16 23.03 16.94 24.84 18.41 26.03 C 15.41 27.09 11 31.58 11 39.5 L 34 39.5 C 34 31.58 29.59 27.09 26.59 26.03 C 28.06 24.84 29 23.03 29 21 C 29 18.59 27.67 16.5 25.72 15.38 C 26.21 14.71 26.5 13.89 26.5 13 C 26.5 10.79 24.71 9 22.5 9 z" stroke-linecap="round"/>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+        </div>
+        <div class="list">
+            <div class="list-container">       
+                <br> <a href = "../portfolio.html">Return to Main Page</a>
+            </div>
+        </div>
+        <div class = "todo-container">
+            <div id = "buttons">
+                <button id = "newTask" class="button mid-fnt" onclick = "generateNewListItem('', false, true, null); document.getElementById('inputField').value = ''; ">New Task</button>
+                <span class="nobr"><input class = "nobr" id = "inputField" type = "text" placeholder="Task Name"></span>
+                <button id = "clearTodo" class="button mid-fnt" onclick = "localStorage.removeItem('todolist');location.reload()">Clear all todo-list items</button>
+                <button class="button mid-fnt test" onclick="changeShift(5)">Change to Target Color</button>
+            </div>
+            <div id="list">
+            </div>
+        </div>
+        <div class="sidebar">
+             
+            <div class="sidebar-container">
+                <p class="sidebar-settings" id="settings">Settings</p>
+                <p class="sidebar-settings" id="other">Other Links/Tools</p>
+                <p class="sidebar-settings" id="help">Help</p>
+                <p class="sidebar-settings" id="faqs">FAQs</p>
+                <p class="sidebar-settings" id="about">About Creators</p>
+                <p class="sidebar-settings" id="log-out">Log Out</p>
+            </div>
+            <img src= "Media/hamburger.svg" id = "toggle-sidebar">
+        </div>
+    </div>
+
+    <!-- Change Hue of Color-->
+    <dialog class="modal" id = "modal-settings">
+        <p class = "settings-titles">Color / Target Color</p>
+        <input type='range' min='0' max="360" value="0" id='hue1slider'>
+        <input type='range' min='0' max="360" value="0" id='hue2slider'>
+        <br> <p class = "return-default-color">Return to Default</p>
+        <br>
+        <p class = "settings-titles">Tasks' Debug Info</p>
+        <table>
+            <tr>
+                <td style="text-align: center">
+                    <input id="setting-num-text" type="checkbox"/>
+                </td>
+            </tr>
+        </table>
+        <form method="dialog">
+          <button>Close</button>
+        </form>
+    </dialog>
+
+
+    <dialog class="modal" id = "modal-log-out">
+        Are You Sure?
+        <br> All your data will be deleted. <br><br>
+        <button onclick = "clearLS();location.reload()">Yes</button>
+        <button onclick = "this.parentNode.close()">No</button>
+    </dialog>
+    <script src="script.js"></script>
+    <script src="changeColor.js"></script>
+</body>
+</html>
