@@ -69,8 +69,8 @@ body {
 
 
 #header #portrait {
-    width: 90%;
-    margin-left: calc(2% + 15px);
+    width: 100%;
+    /* margin-left: calc(2% + 15px); */
     height: var(--height-of-header);
     object-fit: cover;
 }
@@ -159,7 +159,7 @@ body {
 }
 
 #videos .content {
-    height: 450px;
+    height: 470px;
 }
 
 .desc {
@@ -169,10 +169,20 @@ body {
     margin-top: 10px;
     color: white;
     width: 40%;
+    max-height: 100%;
+    overflow: auto;
     top: 30%;
     transform: translateY(-30%);
 }
 
+.desc::-webkit-scrollbar {
+    display: none;
+  }
+
+.desc {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
 
 .credits {
     font-size: 12px;
