@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
 
 body {
     margin: 0;
@@ -52,22 +53,24 @@ body {
     position: absolute;
     z-index: 500;
     white-space: nowrap;
-    font-family: 'Kanit';
-    top: 50%;
-    left: 65%;
-    transform: translate(-50%, -50%);
+    font-family: 'Libre Baskerville';
+    font-weight: 200;
+    top: 20%;
+    left: 50%;
+    transform: translate(-20%, -50%);
     font-size: 6vw;
-    color: black;
-    text-shadow: 
-    -2px -2px 0 #FFFFFF,
-    2px -2px 0 #FFFFFF,
-    -2px 2px 0 #FFFFFF,
-    2px 2px 0 #FFFFDF;  ;
+    color: rgb(59, 59, 59);
+    /* text-shadow: 
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;  ; */
 }
 
 
 #header #portrait {
-    width: 100%;
+    width: 90%;
+    margin-left: calc(2% + 15px);
     height: var(--height-of-header);
     object-fit: cover;
 }
@@ -85,10 +88,6 @@ body {
     text-align: center;
 }
 
-.container p {
-    /* margin-left: 10px; */
-    /* font-size: 18px; */
-}
 .scroll {
     font-size: 1000px;
     padding-bottom: 1000px;
@@ -111,6 +110,7 @@ body {
     align-items: center;
     transition: 1s linear;
     cursor: pointer;
+    outline: white solid 1px;
 }
 
 .number {
@@ -173,8 +173,11 @@ body {
     transform: translateY(-30%);
 }
 
+
 .credits {
     font-size: 12px;
+    line-height: 17px;
+    color:rgb(216, 216, 216);
 }
 
 #descforvid {
